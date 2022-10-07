@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagem/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Serra Gastronômica</title>
+</head>
+<body>
+    <header>
+        <img src="imagem/serra.png" alt="logo do site">
+        <p>Caxias do Sul e região</p>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <div class="secao">
+            <a href="menu.html">Menu</a>
+            <div class="secao1">
+                <a href="menu/italiana.html">Culinária Italiana</a>
+                <a href="menu/oriental.html">Culinária Oriental</a>
+                <a href="menu/vegetariano.html">Culinária Vegetariana</a>
+                <a href="menu/cafe.html">Cafeteria</a>
+                <a href="menu/churrascaria.html">Churrascaria</a>
+                <a href="menu/pizzaria.html">Pizzaria</a>
+            </div>
+        </div>
+        <div class="secao">
+            <a href="rotas.html">Rotas Gastronômicas</a>
+            <div class="secao1">
+                <a href="../rota/fabbrica.html">Fabbrica</a>
+                <a href="../rota/jardim-gastronomico.html">Jardim Gastronômico</a>
+                <a href="../rota/cervejaria.html">Rota Cervejaria</a>
+                <a href="../rota/vale-dos-vinhedos.html">Vale dos Vinhedos</a>
+            </div>
+        </div>
+        <a href="sobre.html">Sobre</a>
+    </nav>
+    <main>
+        <h1>Fale Conosco</h1>
+        <div class="formulario">
+            <form action="recebido.html" method="post">
+            <div class="row">
+              <div class="texto">
+                <label for="nome">Nome</label>
+              </div>
+              <div class="resposta">
+                <input type="text" id="usuario_nome" name="nome" placeholder="Seu nome...">
+              </div>
+            </div>
+            <div class="row">
+              <div class="texto">
+                <label for="Isobrenome">Sobrenome</label>
+              </div>
+              <div class="resposta">
+                <input type="text" id="sobrenome" name="usuario_sobrenome" placeholder="Seu sobrenome...">
+              </div>
+            </div>
+            <div class="row">
+              <div class="texto">
+                <label for="cidade">Cidade</label>
+              </div>
+              <div class="resposta">
+                <input type="text" id="cidade" name="usuario_cidade" placeholder="Onde você mora...">
+              </div>
+            </div>
+            <div class="row">
+              <div class="texto">
+                <label for="sujestao">Sujestão</label>
+              </div>
+              <div class="resposta">
+                <textarea id="sujestao" name="usuario_sujestao" placeholder="Deixe alguma sujestão..." ></textarea>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <input type="submit" value="Enviar">
+            </div>
+            </form>
+          </div>
+          <p>Caso prefirá enviar um email, envie neste endereço: serragastronomica@gmail.com</p>
+    </main>
+    <footer>
+        <span id="texto1">2022 | Serra Gastronômica - Todos os direitos reservados.</span>
+        <span id="texto2">Site desenvolvido por Ellen Conrado e Patrícia Rocha</span>
+    </footer>
+</body>
+</html>

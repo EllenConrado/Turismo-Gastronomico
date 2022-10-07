@@ -1,0 +1,203 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+:root{
+    --cor01: #380200;
+    --cor02: #780400;
+    --cor03: #B80600;
+    --cor04: #C40700;
+    --cor05: #9E0500;
+
+    --fonte-padrao: 'Courier New', Courier, monospace;
+    --fonte-titulo: 'Dancing Script', Times, serif;
+    --fonte-titulo2: 'Sofia', cursive;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #9e0500da;
+    font-family: var(--fonte-padrao);
+    font-size: 20px;
+}
+header{
+    text-align: center;
+    padding: 20px;
+}
+header img{
+    margin-bottom: 20px;
+}
+nav{
+    padding: 10px;;
+    background-color: var(--cor01);
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.404);
+    text-align: center;
+}
+nav>.secao{
+    display: inline-block;
+}
+nav>.secao>.secao1 {
+    display: none;
+}
+nav>.secao:hover>.secao1{
+    display: grid;
+    background-color: var(--cor03);
+    line-height: 0px;
+    border-radius: 10px;
+}
+nav a{
+    margin:30px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition-duration: 0.5s;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.404);
+}
+nav a:hover{
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: underline;
+    background-color: var(--cor05);
+}
+main{
+    max-width: 1000px;
+    min-width: 200px;
+    background-color: rgba(255, 255, 255, 0.342);
+    margin: 20px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+main h1,h2{
+    font-family: var(--fonte-titulo);
+}
+main h1{
+    text-align: center;
+    margin-bottom: 10px;
+    
+}
+main > article.conteudo h1{
+    font-size: 40px;
+}
+main p,address{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.5em;
+}
+main p.observação{
+    text-align: right;
+    font-size: 15px;
+}
+main a{
+    color: black;
+    text-decoration-style: dotted;
+    text-decoration-color: var(--cor02);
+    transition: 1s;
+}
+main a:hover{
+    border-radius: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.404);
+}
+main div.imagem > img{
+    width: 90%;
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.404);
+}
+main div#mapa > img{
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+main article.conteudo > aside{
+    width: 90%;
+    margin: 20px;
+    margin: auto;
+    background-color: white;
+}
+main article.conteudo >aside a>img{   
+    width: 20%;
+    padding: 15px;
+    display: inline-block;
+}
+footer{
+    background-color: var(--cor01);
+    padding: 20px;
+    margin: 0px;
+    font-size: 0.8em;
+    color: white;
+}
+footer >span#texto1{
+    float: left;
+}
+footer>span#texto1::before{
+    content: '\00A0\A9\00A0';
+}
+footer>span#texto2{
+    float: right;
+}
+
+/*SESSÃO FORMULÁRIO*/
+main div.formulario > form input[type=text], textarea {
+width: 100%;
+padding: 12px;
+border: 1px solid rgba(255, 255, 255, 0.342);
+border-radius: 4px;
+resize: vertical;
+font-family: var(--fonte-padrao);
+}
+main div.formulario > form textarea{
+    height: 200px;
+}
+main div.formulario > form label {
+padding: 12px 12px 12px 0;
+display: inline-block;
+}
+main div.formulario > form input[type=submit] {
+background-color: var(--cor02);
+color: white;
+padding: 12px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+float: right;
+}
+main div.formulario > form input[type=submit]:hover {
+background-color: var(--cor03);
+}
+main div.formulario {
+font-family: var(--fonte-padrao);
+border-radius: 5px;
+background-color: rgba(255, 255, 255, 0.342);
+padding: 20px;
+}
+main div.formulario div.texto {
+float: left;
+width: 25%;
+margin-top: 6px;
+}
+main div.formulario div.resposta {
+float: left;
+width: 75%;
+margin-top: 6px;
+}
+main div.formulario div.row:after {
+content: "";
+display: table;
+clear: both;
+}
+@media screen and (max-width: 600px) {
+    .texto, .resposta, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
